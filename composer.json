@@ -1,20 +1,29 @@
 {
+    "name": "ifcanduela/kernel-middleware",
+    "description": "Middleware processor for HTTP requests and responses",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ifcanduela",
+            "email": "ifcanduela@gmail.com"
+        }
+    ],
     "scripts": {
         "check": "psalm",
         "test": "phpunit"
     },
     "require": {
-        "symfony/http-foundation": "^6.1",
-        "symfony/var-dumper": "^6.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "ifcanduela\\kernel\\": "./src",
-            "app\\": "./app"
-        }
+        "php": "^8.0",
+        "symfony/http-foundation": "^6.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
         "vimeo/psalm": "^4.29"
+    },
+    "autoload": {
+        "psr-4": {
+            "ifcanduela\\kernel\\": "./src"
+        }
     }
 }
